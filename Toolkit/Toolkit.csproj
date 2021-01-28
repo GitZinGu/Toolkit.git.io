@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3489551D-CF14-4A5D-8B8A-84F60B35B511}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toolkit</RootNamespace>
+    <AssemblyName>Toolkit</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cooking_tools_128px_1291583_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18f031bd02e5e291, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.International.Converters.PinYinConverter.1.0.0\lib\ChnCharInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.5.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=5.11.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.9\lib\net45\Unity.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.10.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.9\lib\net45\Unity.Container.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net45\zxing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net45\zxing.presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="exetowinform.cs" />
+    <Compile Include="Info\ApplicationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info\ApplicationInfo.Designer.cs">
+      <DependentUpon>ApplicationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\BarCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarCode\BarCode.Designer.cs">
+      <DependentUpon>BarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode\BarcodeHelper.cs" />
+    <Compile Include="BarCode\DoBarCode.cs" />
+    <Compile Include="Game\2048\Direction.cs" />
+    <Compile Include="Game\2048\TwoZeroFourEight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\2048\TwoZeroFourEight.Designer.cs">
+      <DependentUpon>TwoZeroFourEight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\2048\MyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game\2048\MyControl.Designer.cs">
+      <DependentUpon>MyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\2048\NumberControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Game\2048\NumberControl.Designer.cs">
+      <DependentUpon>NumberControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\2048\OverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\2048\OverForm.Designer.cs">
+      <DependentUpon>OverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.Designer.cs" />
+    <Compile Include="Game\Tetris\Russia.cs" />
+    <Compile Include="Game\Tetris\Tetris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Tetris\Tetris.Designer.cs">
+      <DependentUpon>Tetris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnySymb\SpecialCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnySymb\SpecialCharacter.Designer.cs">
+      <DependentUpon>SpecialCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnySymb\Symbol.cs" />
+    <Compile Include="Game\Klotski\Klotski.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Klotski\Klotski.Designer.cs">
+      <DependentUpon>Klotski.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game\Snake\Snake.cs" />
+    <Compile Include="Game\Snake\SnakeGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game\Snake\SnakeGame.Designer.cs">
+      <DependentUpon>SnakeGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpperLower\CaseConversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpperLower\CaseConversion.Designer.cs">
+      <DependentUpon>CaseConversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Json\FormJSON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Json\FormJSON.Designer.cs">
+      <DependentUpon>FormJSON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="toolkit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toolkit.Designer.cs">
+      <DependentUpon>toolkit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpperLower\Character.cs" />
+    <EmbeddedResource Include="Info\ApplicationInfo.resx">
+      <DependentUpon>ApplicationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarCode\BarCode.resx">
+      <DependentUpon>BarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\2048\TwoZeroFourEight.resx">
+      <DependentUpon>TwoZeroFourEight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\2048\MyControl.resx">
+      <DependentUpon>MyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\2048\NumberControl.resx">
+      <DependentUpon>NumberControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\2048\OverForm.resx">
+      <DependentUpon>OverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx" />
+    <EmbeddedResource Include="Game\Tetris\Tetris.resx">
+      <DependentUpon>Tetris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnySymb\SpecialCharacter.resx">
+      <DependentUpon>SpecialCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Klotski\Klotski.resx">
+      <DependentUpon>Klotski.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game\Snake\SnakeGame.resx">
+      <DependentUpon>SnakeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpperLower\CaseConversion.resx">
+      <DependentUpon>CaseConversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Json\FormJSON.resx">
+      <DependentUpon>FormJSON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toolkit.resx">
+      <DependentUpon>toolkit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白棋子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\黑棋子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\棋盘.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FJ.jpg" />
+    <None Include="Resources\dls.jpg" />
+    <None Include="Resources\SKY.jpg" />
+    <None Include="Resources\YD.jpg" />
+    <None Include="Resources\YD.bmp" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\fill_sign.png" />
+    <None Include="Resources\game.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\json.png" />
+    <None Include="Resources\barcode.png" />
+    <None Include="Resources\Character.png" />
+    <None Include="Resources\Scan_Barcode .png" />
+    <None Include="Resources\json_file.png" />
+    <None Include="Resources\software.png" />
+    <None Include="Resources\Symbol.png" />
+    <None Include="Resources\Cgame.png" />
+    <None Include="Resources\database_file.png" />
+    <None Include="Resources\info_24.png" />
+    <None Include="Resources\exit_24.png" />
+    <Content Include="cooking_tools_128px_1291583_easyicon.net.ico" />
+    <Content Include="Resource\close1.png" />
+    <Content Include="Resource\close2.png" />
+    <Content Include="Resource\game.ico" />
+    <Content Include="Resource\over.gif" />
+    <Content Include="Resource\start1.png" />
+    <Content Include="Resource\start2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

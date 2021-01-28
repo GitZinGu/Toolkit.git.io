@@ -1,0 +1,5 @@
+﻿{
+  "别名": "MySql项目",
+  "链接": "Data Source=192.168.0.1;Database=MySQL;User ID=MySqlAdmin;Password=MySqlAdmin; Allow User Variables=True;CharSet=utf8;",
+  "类型": "Mysql"
+}

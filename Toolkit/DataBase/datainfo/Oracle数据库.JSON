@@ -1,0 +1,5 @@
+﻿{
+  "别名": "Oracle项目",
+  "链接": "Data Source=OracleSource;Persist Security Info=True;User ID=Ocl;Password=Ocl;Pooling=true; Max pool Size=2000;Min pool Size=2;Connection Lifetime=900;Enlist=True",
+  "类型": "Oracle"
+}

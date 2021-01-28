@@ -1,0 +1,5 @@
+﻿{
+  "别名": "DB2项目",
+  "链接": "Server=192.168.0.1:5000;Database=SDB;UID=db2admin;PWD=db2admin;Max Pool Size=100;Min Pool Size=10;",
+  "类型": "DB2"
+}
